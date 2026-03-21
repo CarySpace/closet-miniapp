@@ -1,0 +1,5 @@
+<view class="card">
+  <image class="cover" src="{{item.image}}" mode="aspectFill"></image>
+  <text class="name">{{item.name}}</text>
+  <text class="tag">{{item.tag}}</text>
+</view>

@@ -1,0 +1,58 @@
+.page {
+  padding: 32rpx;
+}
+
+.hero-card {
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  display: block;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 16rpx;
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 32rpx;
+}
+
+.hero-button {
+  background: #111111;
+  color: #ffffff;
+  font-size: 28rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius: 999rpx;
+}
+
+.closet-list {
+  margin-top: 24rpx;
+}
+
+.closet-item {
+  background: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 16rpx;
+}
+
+.item-name {
+  display: block;
+  font-size: 32rpx;
+  color: #222222;
+  margin-bottom: 8rpx;
+}
+
+.item-tag {
+  font-size: 24rpx;
+  color: #888888;
+}

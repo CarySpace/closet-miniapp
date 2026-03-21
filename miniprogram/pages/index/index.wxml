@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="hero-card">
+    <text class="hero-title">欢迎来到 Closet 👕</text>
+    <text class="hero-subtitle">整理你的衣橱，获得每日穿搭灵感</text>
+    <text>{{message}}</text>
+    <view class="hero-button" bindtap="handleStart">
+      开始整理衣橱
+    </view>
+  </view>
+  <view wx:if="{{showCloset}}" class="closet-list">
+    <clothing-card
+    wx:for="{{clothes}}"
+    wx:key="id"
+    item="{{item}}"
+  />
+</view>
+</view>
