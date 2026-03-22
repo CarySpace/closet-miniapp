@@ -1,0 +1,61 @@
+.page {
+  padding: 24rpx;
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+.hero {
+  padding-top: 8rpx;
+}
+
+.hero-date {
+  display: block;
+  font-size: 22rpx;
+  color: #5f5e5e;
+  margin-bottom: 20rpx;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 3rpx;
+}
+
+.hero-greeting {
+  display: block;
+  font-size: 56rpx;
+  font-weight: 600;
+  color: #1a1c1b;
+  margin-bottom: 30rpx;
+  line-height: 1.08;
+}
+
+.weather-card {
+  background: var(--color-surface-low);
+  border-radius: var(--radius-xl);
+  padding: 24rpx 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-temp {
+  font-size: 56rpx;
+  font-weight: 700;
+  color: #1a1c1b;
+  line-height: 1;
+  margin-bottom: 10rpx;
+}
+
+.hero-weather-text {
+  font-size: 28rpx;
+  color: #5f5e5e;
+  line-height: 1.2;
+}
+
+.weather-icon {
+  font-size: 50rpx;
+  color: #6c5e06;
+}

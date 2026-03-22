@@ -1,3 +1,40 @@
 page {
-  background: #f5f5f5;
+  /* Color - Background & Surface */
+  --color-bg: #faf9f7;
+  --color-surface-low: #f4f3f1;
+  --color-surface-lowest: #ffffff;
+
+  /* Color - Text */
+  --color-text-primary: #1a1c1b;
+  --color-text-secondary: #5f5e5e;
+  --color-text-on-primary: #ffffff;
+
+  /* Color - Brand */
+  --color-primary: #6c5e06;
+  --color-primary-container: #cbb95d;
+  --color-tertiary: #006e20;
+  --color-tertiary-container: #69ce6d;
+  --color-primary-fixed: #f7e382;
+
+  /* Radius */
+  --radius-lg: 16rpx;
+  --radius-xl: 24rpx;
+  --radius-full: 999rpx;
+
+  /* Shadow */
+  --shadow-ambient: 0 12rpx 40rpx rgba(26, 28, 27, 0.06);
+
+  /* Spacing */
+  --space-4: 20rpx;
+  --space-6: 28rpx;
+  --space-8: 38rpx;
+  --space-12: 56rpx;
+  --space-16: 78rpx;
+
+  /* Typography */
+  --font-size-display-lg: 56rpx;
+  --font-size-display-sm: 44rpx;
+  --font-size-body-md: 28rpx;
+  --font-size-label-md: 22rpx;
+  --font-size-label-sm: 20rpx;
 }
