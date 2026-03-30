@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html class="light" lang="en"&gt;&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"/&gt;</p>
+<p class="p1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"/&gt;</p>
+<p class="p1">&lt;title&gt;Atelier - Digital Curator&lt;/title&gt;</p>
+<p class="p1">&lt;!-- Fonts --&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com" rel="preconnect"/&gt;</p>
+<p class="p1">&lt;link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;amp;family=Manrope:wght@600;700;800&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;!-- Icons --&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"/&gt;</p>
+<p class="p1">&lt;!-- Tailwind CSS --&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;script id="tailwind-config"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>darkMode: "class",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary-container": "#005617",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"error": "#ba1a1a",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-background": "#1a1c1b",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container": "#efeeec",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-low": "#f4f3f1",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-surface-variant": "#4d453c",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-error-container": "#93000a",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"background": "#faf9f7",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-bright": "#faf9f7",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"outline": "#7f766a",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-high": "#e9e8e6",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"inverse-primary": "#dac769",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-tint": "#6c5e06",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary": "#6c5e06",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-highest": "#e3e2e0",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary-fixed": "#211b00",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-fixed-dim": "#dac769",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary-container": "#656464",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-fixed": "#93f993",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary": "#006e20",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"inverse-on-surface": "#f1f1ef",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-fixed": "#f7e382",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary-container": "#544900",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"inverse-surface": "#2f3130",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-dim": "#dadad8",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary-fixed-variant": "#474747",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary-fixed": "#002105",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary-fixed-variant": "#005316",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-error": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary": "#5f5e5e",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-container-lowest": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-container": "#69ce6d",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"tertiary-fixed-dim": "#77dc7a",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-fixed-dim": "#c8c6c6",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-secondary-fixed": "#1b1c1c",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-surface": "#1a1c1b",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-container": "#e4e2e1",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-tertiary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"on-primary-fixed-variant": "#524700",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"primary-container": "#cbb95d",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"outline-variant": "#d1c5b8",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface-variant": "#e3e2e0",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"surface": "#faf9f7",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"secondary-fixed": "#e4e2e1",</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"error-container": "#ffdad6"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>fontFamily: {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"headline": ["Manrope"],</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"body": ["Inter"],</p>
+<p class="p1"><span class="Apple-converted-space">              </span>"label": ["Inter"]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.material-symbols-outlined {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>vertical-align: middle;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.silk-gradient {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #6c5e06 0%, #cbb95d 100%);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: max(884px, 100dvh);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-background text-on-background font-body min-h-screen pb-32"&gt;</p>
+<p class="p1">&lt;!-- TopAppBar --&gt;</p>
+<p class="p1">&lt;header class="bg-[#faf9f7]/80 dark:bg-stone-900/80 backdrop-blur-xl fixed top-0 w-full z-50"&gt;</p>
+<p class="p1">&lt;div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto"&gt;</p>
+<p class="p1">&lt;button class="text-[#6c5e06] dark:text-[#cbb95d] hover:opacity-70 transition-opacity active:scale-95 duration-200 transition-transform"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="menu"&gt;menu&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;h1 class="text-2xl font-bold tracking-tighter text-[#6c5e06] dark:text-[#cbb95d] font-['Manrope']"&gt;Atelier&lt;/h1&gt;</p>
+<p class="p1">&lt;button class="text-[#6c5e06] dark:text-[#cbb95d] hover:opacity-70 transition-opacity active:scale-95 duration-200 transition-transform"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="settings"&gt;settings&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1">&lt;main class="pt-24 px-6 max-w-7xl mx-auto space-y-12"&gt;</p>
+<p class="p1">&lt;!-- Hero: Weather &amp; Greeting --&gt;</p>
+<p class="p1">&lt;section class="flex flex-col md:flex-row md:items-end justify-between gap-6"&gt;</p>
+<p class="p1">&lt;div class="space-y-1"&gt;</p>
+<p class="p1">&lt;span class="font-label text-xs uppercase tracking-[0.2em] text-secondary"&gt;Monday, Oct 24&lt;/span&gt;</p>
+<p class="p1">&lt;h2 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface"&gt;Good morning.&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-4 bg-surface-container-low px-6 py-4 rounded-xl border-none"&gt;</p>
+<p class="p1">&lt;div class="text-right"&gt;</p>
+<p class="p1">&lt;p class="font-headline text-2xl font-bold text-on-surface"&gt;22°C&lt;/p&gt;</p>
+<p class="p1">&lt;p class="font-label text-sm text-secondary"&gt;Sunny in Paris&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-4xl text-primary" data-icon="light_mode"&gt;light_mode&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Main Content: Today's Outfit Bento Grid --&gt;</p>
+<p class="p1">&lt;section class="space-y-6"&gt;</p>
+<p class="p1">&lt;div class="flex items-baseline justify-between"&gt;</p>
+<p class="p1">&lt;h3 class="font-headline text-2xl font-bold"&gt;Today's Outfit Idea&lt;/h3&gt;</p>
+<p class="p1">&lt;button class="font-label text-sm font-semibold text-tertiary underline underline-offset-4 decoration-2"&gt;Refresh Look&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="grid grid-cols-1 md:grid-cols-12 gap-6"&gt;</p>
+<p class="p1">&lt;!-- Large Item Card --&gt;</p>
+<p class="p1">&lt;div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 relative overflow-hidden group"&gt;</p>
+<p class="p1">&lt;div class="relative z-10 flex flex-col h-full justify-between gap-12"&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;span class="inline-block px-3 py-1 rounded-full bg-tertiary-container/30 text-on-tertiary-container text-[10px] font-bold uppercase tracking-widest mb-4"&gt;Core Piece&lt;/span&gt;</p>
+<p class="p1">&lt;h4 class="font-headline text-4xl font-bold tracking-tight max-w-xs"&gt;Silk Blend Oversized Shirt&lt;/h4&gt;</p>
+<p class="p1">&lt;p class="text-secondary mt-2"&gt;Off-White • Italian Linen&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="flex gap-4"&gt;</p>
+<p class="p1">&lt;button class="silk-gradient text-on-primary px-8 py-3 rounded-xl font-bold shadow-sm active:scale-95 transition-transform"&gt;Wear Today&lt;/button&gt;</p>
+<p class="p1">&lt;button class="bg-surface-container-high text-on-surface px-6 py-3 rounded-xl font-bold active:scale-95 transition-transform"&gt;Details&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Overlapping Image Element --&gt;</p>
+<p class="p1">&lt;div class="absolute -right-12 -bottom-12 w-2/3 aspect-square bg-surface-container-high rounded-full opacity-50 -z-0"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;img alt="Silk Blend Oversized Shirt" class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-4/5 object-cover rounded-xl shadow-2xl -mr-8 group-hover:-mr-4 transition-all duration-500" data-alt="High quality white linen shirt flat lay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQP46HHRFlXSOE2bbBHGdJfkP89adZr5eS_8YgHXz4IIjjSx00xU0A5LC-xbISzdvEDLhPN2HO7dAF5Tn6eXo5YHkRxnMOwe7DQ8-m2BFDG39Z49XGcYU8Vn9CEVCZ7LNFer7P9w-F7HrAemj0XkI-G-G5tpYrPkX7D-QsI3G8gfq5tSIiIHlxNNS7TH0h5LH7rq6g6YdjWWGO5U1swo69EDrZqBhbQHw2E6Ba2d9-v_z2utH-GqanZxF3M2hx4cjYpUir3GF7G-sY"/&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Small Grid Items --&gt;</p>
+<p class="p1">&lt;div class="md:col-span-4 flex flex-col gap-6"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-xl p-6 flex-1 flex items-center gap-6 group"&gt;</p>
+<p class="p1">&lt;div class="w-24 h-24 bg-surface-container rounded-lg overflow-hidden flex-shrink-0"&gt;</p>
+<p class="p1">&lt;img alt="Denim Trousers" class="w-full h-full object-cover" data-alt="Dark indigo straight leg denim jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqBUhCRsokgLN57PObmNkqTTIZXfNfxE_W0AdlZdNnfuoYTXzkyEgcSW5fNYchJct8XGPiUmL60DWONxJPSoalFkCIqp-iMgmZ--ZdB3Cp45c52urmg1WqPb-fKqVw898u4UyLJCfVdr55PX8SDri62p5tl5kmM508IcR4KQ7fUIlk1dKqB4air4KPYOJ3Bm0JynTN7jDCLsYMOkDMfSflyI0jm1qm-yWGMbnjGOPYhhxze4m864woqn2kPQERYeMqMGS4szhXVB-r"/&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;p class="font-label text-[10px] font-bold uppercase text-secondary tracking-widest"&gt;Bottoms&lt;/p&gt;</p>
+<p class="p1">&lt;h5 class="font-headline font-bold text-lg"&gt;Raw Indigo Denim&lt;/h5&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest rounded-xl p-6 flex-1 flex items-center gap-6 group"&gt;</p>
+<p class="p1">&lt;div class="w-24 h-24 bg-surface-container rounded-lg overflow-hidden flex-shrink-0"&gt;</p>
+<p class="p1">&lt;img alt="Leather Loafers" class="w-full h-full object-cover" data-alt="Polished black leather penny loafers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQQOzJQdUo9QEyzbWg-yd3U0lmNbep8QJlc3O_PaJ6pjxkTzTvB7tcKHN_CIhg14_G55EjUMFzCpeW5AeRzh5Rj9kTNt0mcml-l9PAQQgI4hQJX215t8TEaQC9gXfHjMXvpqdft8ucBNd2FXwmvjONevMwc6-9fmDj6ZiMOnOj0jdkPc406mTPN51L1MItVjBv1133MSjHlEqdlh8VO5xMR7qkofsYI3K3k0IzNXNR2OVNkeHczo0SUu-sUiz-xJO3dGD4XRgq6bUW"/&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;p class="font-label text-[10px] font-bold uppercase text-secondary tracking-widest"&gt;Footwear&lt;/p&gt;</p>
+<p class="p1">&lt;h5 class="font-headline font-bold text-lg"&gt;Classic Loafers&lt;/h5&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Care Alert Section --&gt;</p>
+<p class="p1">&lt;section class="bg-primary-fixed/30 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6"&gt;</p>
+<p class="p1">&lt;div class="flex items-center gap-6"&gt;</p>
+<p class="p1">&lt;div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-sm"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-3xl" data-icon="eco"&gt;eco&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;h4 class="font-headline font-bold text-xl"&gt;Care Alert&lt;/h4&gt;</p>
+<p class="p1">&lt;p class="text-on-surface-variant"&gt;Your &lt;span class="font-bold text-primary"&gt;Linen Shirt&lt;/span&gt; needs gentle washing soon to maintain fiber integrity.&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;button class="bg-on-background text-background px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity"&gt;Schedule Care&lt;/button&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Quick Actions --&gt;</p>
+<p class="p1">&lt;section class="grid grid-cols-2 gap-4"&gt;</p>
+<p class="p1">&lt;button class="flex items-center justify-center gap-3 py-6 bg-surface-container-high rounded-xl hover:bg-surface-container-highest transition-colors active:scale-[0.98]"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-primary" data-icon="add_circle"&gt;add_circle&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-bold tracking-tight"&gt;Add New Outfit&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;button class="flex items-center justify-center gap-3 py-6 bg-surface-container-high rounded-xl hover:bg-surface-container-highest transition-colors active:scale-[0.98]"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-primary" data-icon="favorite" style="font-variation-settings: 'FILL' 1;"&gt;favorite&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-bold tracking-tight"&gt;View Favorites&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Spacing Void for Premium Feel --&gt;</p>
+<p class="p1">&lt;div class="h-12"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p1">&lt;!-- BottomNavBar --&gt;</p>
+<p class="p1">&lt;nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#faf9f7]/80 dark:bg-stone-900/80 backdrop-blur-xl border-t border-stone-200/15 dark:border-stone-800/15 shadow-[0_-12px_40px_rgba(26,28,27,0.06)] z-50"&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-[#6c5e06] dark:text-[#cbb95d] font-bold bg-[#f7e382]/20 rounded-xl px-3 py-1 active:scale-90 transition-all duration-200" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="home_app_logo"&gt;home_app_logo&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1"&gt;Home&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-[#5f5e5e] dark:text-stone-400 hover:text-[#6c5e06] transition-colors active:scale-90 duration-200" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="checkroom"&gt;checkroom&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1"&gt;Wardrobe&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-[#5f5e5e] dark:text-stone-400 hover:text-[#6c5e06] transition-colors active:scale-90 duration-200" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-3xl" data-icon="add_circle"&gt;add_circle&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1"&gt;Add&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-[#5f5e5e] dark:text-stone-400 hover:text-[#6c5e06] transition-colors active:scale-90 duration-200" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="calendar_today"&gt;calendar_today&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1"&gt;Calendar&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;a class="flex flex-col items-center justify-center text-[#5f5e5e] dark:text-stone-400 hover:text-[#6c5e06] transition-colors active:scale-90 duration-200" href="#"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="person"&gt;person&lt;/span&gt;</p>
+<p class="p1">&lt;span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1"&gt;Profile&lt;/span&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
