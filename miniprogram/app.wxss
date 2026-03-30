@@ -1,40 +1,223 @@
+/* Design foundation extracted from DESIGN.md.
+   HOME.HTML was empty on 2026-03-30, so there were no HTML-specific overrides to reconcile. */
+
 page {
-  /* Color - Background & Surface */
-  --color-bg: #faf9f7;
+  /* Color palette */
+  --color-background: #faf9f7;
+  --color-surface: #faf9f7;
   --color-surface-low: #f4f3f1;
   --color-surface-lowest: #ffffff;
+  --color-surface-high: #efede9;
+  --color-surface-highest: #ebe8e2;
+  --color-bg: var(--color-background);
 
-  /* Color - Text */
-  --color-text-primary: #1a1c1b;
-  --color-text-secondary: #5f5e5e;
-  --color-text-on-primary: #ffffff;
+  /* Text and outline */
+  --color-on-surface: #1a1c1b;
+  --color-secondary: #5f5e5e;
+  --color-on-primary: #ffffff;
+  --color-text-primary: var(--color-on-surface);
+  --color-text-secondary: var(--color-secondary);
+  --color-text-on-primary: var(--color-on-primary);
+  --color-outline-variant: rgba(95, 94, 94, 1);
+  --color-outline-ghost: rgba(95, 94, 94, 0.15);
 
-  /* Color - Brand */
+  /* Brand accents */
   --color-primary: #6c5e06;
   --color-primary-container: #cbb95d;
   --color-tertiary: #006e20;
   --color-tertiary-container: #69ce6d;
   --color-primary-fixed: #f7e382;
-
-  /* Radius */
-  --radius-lg: 16rpx;
-  --radius-xl: 24rpx;
-  --radius-full: 999rpx;
-
-  /* Shadow */
-  --shadow-ambient: 0 12rpx 40rpx rgba(26, 28, 27, 0.06);
-
-  /* Spacing */
-  --space-4: 20rpx;
-  --space-6: 28rpx;
-  --space-8: 38rpx;
-  --space-12: 56rpx;
-  --space-16: 78rpx;
+  --color-glass-surface: rgba(250, 249, 247, 0.8);
+  --gradient-primary-silk: linear-gradient(135deg, #6c5e06 0%, #cbb95d 100%);
 
   /* Typography */
-  --font-size-display-lg: 56rpx;
-  --font-size-display-sm: 44rpx;
+  --font-family-display: "Manrope", "SF Pro Display", "PingFang SC", sans-serif;
+  --font-family-body: "Inter", "SF Pro Text", "PingFang SC", sans-serif;
+  --font-size-display-lg: 112rpx;
+  --font-size-display-sm: 80rpx;
+  --font-size-headline-md: 52rpx;
   --font-size-body-md: 28rpx;
   --font-size-label-md: 22rpx;
   --font-size-label-sm: 20rpx;
+  --line-height-display: 1.06;
+  --line-height-body: 1.6;
+  --tracking-display: -0.02em;
+  --tracking-caps: 0.1em;
+
+  /* Radius */
+  --radius-lg: 32rpx;
+  --radius-xl: 48rpx;
+  --radius-full: 999rpx;
+
+  /* Depth and effects */
+  --shadow-ambient: 0 24rpx 80rpx rgba(26, 28, 27, 0.06);
+  --glass-blur: 40rpx;
+  --transition-tonal: background-color 240ms ease, box-shadow 240ms ease, transform 240ms ease;
+
+  /* Spacing scale */
+  --space-1: 12rpx;
+  --space-2: 22rpx;
+  --space-3: 34rpx;
+  --space-4: 45rpx;
+  --space-5: 56rpx;
+  --space-6: 67rpx;
+  --space-8: 90rpx;
+  --space-12: 134rpx;
+  --space-16: 179rpx;
+  --space-20: 224rpx;
+  --space-24: 269rpx;
+  --overlap-asymmetric: -10rpx;
+
+  background: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-family-body);
+  line-height: var(--line-height-body);
+}
+
+.display-lg {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-display-lg);
+  font-weight: 600;
+  line-height: var(--line-height-display);
+  letter-spacing: var(--tracking-display);
+  color: var(--color-on-surface);
+}
+
+.display-sm {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-display-sm);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: var(--tracking-display);
+  color: var(--color-on-surface);
+}
+
+.editorial-caption {
+  display: block;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-label-md);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.surface-section {
+  background: var(--color-surface-low);
+  border-radius: var(--radius-xl);
+  box-sizing: border-box;
+}
+
+.surface-card {
+  background: var(--color-surface-lowest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-sizing: border-box;
+}
+
+.surface-float {
+  background: var(--color-surface-highest);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-ambient);
+  box-sizing: border-box;
+}
+
+.glass-panel {
+  background: var(--color-glass-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-ambient);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+  box-sizing: border-box;
+}
+
+.ghost-border {
+  border: 1rpx solid var(--color-outline-ghost);
+}
+
+.btn-primary {
+  background: var(--gradient-primary-silk);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--font-size-label-md);
+  font-weight: 600;
+  box-shadow: var(--shadow-ambient);
+  box-sizing: border-box;
+}
+
+.btn-secondary {
+  background: var(--color-surface-high);
+  color: var(--color-on-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3) var(--space-5);
+  font-size: var(--font-size-label-md);
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.btn-tertiary {
+  display: inline-block;
+  color: var(--color-tertiary);
+  font-size: var(--font-size-label-md);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding-bottom: 6rpx;
+  border-bottom: 4rpx solid var(--color-tertiary);
+}
+
+.input-shell {
+  background: var(--color-surface-highest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  box-sizing: border-box;
+  transition: var(--transition-tonal);
+}
+
+.input-shell--active {
+  background: linear-gradient(135deg, rgba(247, 227, 130, 0.36) 0%, var(--color-surface-lowest) 100%);
+  box-shadow: 0 0 0 1rpx rgba(247, 227, 130, 0.4);
+}
+
+.care-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 20rpx;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-label-sm);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.care-tag--fresh {
+  background: var(--color-tertiary-container);
+  color: var(--color-tertiary);
+}
+
+.care-tag--maintenance {
+  background: var(--color-primary-fixed);
+  color: var(--color-primary);
+}
+
+.section-gap-lg {
+  margin-top: var(--space-12);
+}
+
+.section-gap-xl {
+  margin-top: var(--space-16);
+}
+
+.void-space {
+  min-height: var(--space-20);
+}
+
+.asymmetric-overlap {
+  margin-left: var(--overlap-asymmetric);
+  margin-top: var(--overlap-asymmetric);
 }
