@@ -1,6 +1,6 @@
 .page {
   padding: 24rpx;
-  background: var(--color-bg);
+  background: var(--color-background);
   min-height: 100vh;
 }
 
@@ -11,7 +11,7 @@
 .hero-date {
   display: block;
   font-size: 22rpx;
-  color: #5f5e5e;
+  color: var(--color-secondary);
   margin-bottom: 20rpx;
   line-height: 1.4;
   text-transform: uppercase;
@@ -22,13 +22,13 @@
   display: block;
   font-size: 56rpx;
   font-weight: 600;
-  color: #1a1c1b;
+  color: var(--color-on-surface);
   margin-bottom: 30rpx;
   line-height: 1.08;
 }
 
 .weather-card {
-  background: var(--color-surface-low);
+  background: var(--color-surface-container-low);
   border-radius: var(--radius-xl);
   padding: 24rpx 28rpx;
   display: flex;
@@ -44,18 +44,18 @@
 .hero-temp {
   font-size: 56rpx;
   font-weight: 700;
-  color: #1a1c1b;
+  color: var(--color-on-surface);
   line-height: 1;
   margin-bottom: 10rpx;
 }
 
 .hero-weather-text {
   font-size: 28rpx;
-  color: #5f5e5e;
+  color: var(--color-secondary);
   line-height: 1.2;
 }
 
 .weather-icon {
   font-size: 50rpx;
-  color: #6c5e06;
+  color: var(--color-primary);
 }
