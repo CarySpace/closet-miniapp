@@ -51,18 +51,6 @@ page {
   --color-inverse-on-surface: #f1f1ef;
   --color-inverse-primary: #dac769;
 
-  /* Compatibility aliases for existing pages */
-  --color-bg: var(--color-background);
-  --color-text-primary: var(--color-on-surface);
-  --color-text-secondary: var(--color-secondary);
-  --color-text-muted: var(--color-on-surface-variant);
-  --color-text-on-primary: var(--color-on-primary);
-  --color-surface-low: var(--color-surface-container-low);
-  --color-surface-lowest: var(--color-surface-container-lowest);
-  --color-surface-high: var(--color-surface-container-high);
-  --color-surface-highest: var(--color-surface-container-highest);
-  --color-outline-ghost: var(--color-ghost-border);
-
   /* Signature treatments from HOME.HTML */
   --color-glass-surface: rgba(250, 249, 247, 0.8);
   --color-nav-active: rgba(247, 227, 130, 0.2);
